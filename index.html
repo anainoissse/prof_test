@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" href="./main.css" />
+    <script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
+</head>
+<body>
+
+	<div class="quiz" id="quiz">
+
+		<div class="quiz-header" id="header">
+			<!-- Заголовок вопроса -->
+			<h2 class="title">Загружаем вопрос...</h2>
+
+			<!-- Результаты викторины -->
+			<h2 class="title">%title%</h2>
+			<h3 class="summary">%message%</h3>
+		</div>
+            <!-- Результаты викторины -->
+		<ul class="quiz-list" id="list">
+
+			<li>
+				<label>
+					<input value = "%number%" type="checkbox" class="answer" name="answer" />
+					<span class="ingredient">Ответ...</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input value = "%number%" type="checkbox" class="answer" name="answer" />
+					<span class="ingredient">Ответ...</span>
+				</label>
+			</li>
+
+		</ul>
+		<button class="quiz-submit submit" id="submit">Ответить</button>
+
+	</div>
+<!--<div id="cont"></div>-->
+    <style>#cont { 
+        width: 100%; height: 100%; margin: 0; padding: 0; 
+      } </style>
+    
+    <script src="./main.js"></script>
+  
+    
+</body>
+</html>
